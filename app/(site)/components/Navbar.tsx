@@ -28,7 +28,6 @@ const Navbar = () => {
           {/* <AvatarImage src="hdttps://github.com/shadcn.png" alt="@shadcn" /> */}
           <AvatarFallback>AK</AvatarFallback>
         </Avatar>
-        
       </div>
     </header>
   );
