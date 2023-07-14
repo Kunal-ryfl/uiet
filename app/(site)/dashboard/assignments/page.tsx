@@ -1,26 +1,33 @@
-import React from 'react'
-const tags = Array.from({ length: 50 }).map(
-    (_, i, a) => `v1.2.0-beta.${a.length - i}`
-  )
-  
+import React from "react";
+import TableComponent from "../../components/TableComponent";
+import { Assignment } from "@/utils/types";
+
+const head: string[] = ["id", "option", "examiner", "course", "status"];
+
+const data: Assignment[] = [
+  {
+    id: 1,
+    examiner: "Prakhar ",
+    course: "DSA",
+    status: true,
+    option: "regular",
+  },
+  { id: 2, examiner: "Ritesh ", course: "CN", status: true, option: "regular" },
+  {
+    id: 3,
+    examiner: "Prakhar ",
+    course: "OS",
+    status: true,
+    option: "regular",
+  },
+];
 
 const page = () => {
   return (
-      <div className="">
-        <h4 className="mb-4 text-xl font-medium leading-none">route</h4>
-        {tags.map((tag) => (
-          
-          <React.Fragment>
-          
-            <div className="text-base cursor-pointer" key={tag}>
-              {tag}
-            </div>
-            {/* <Separator className="my-2" /> */}
-          </React.Fragment>
-        ))}
-      </div>
-    
-  )
-}
+    <div className="">
+      <TableComponent head={head} data={data} />
+    </div>
+  );
+};
 
-export default page
+export default page;

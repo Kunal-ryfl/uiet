@@ -11,7 +11,6 @@ const Navbar = () => {
         <div className="  md:hidden">
           <Mobilenav />
         </div>
-        {/* <h1 className="  text-sky-500 font-medium  text-xl">Panjab university</h1> */}
         <Image
           src={
             "https://puchd.ac.in/includes/webimages/panjab-university-logo.jpg"
