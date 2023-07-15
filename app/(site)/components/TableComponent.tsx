@@ -22,14 +22,14 @@ const TableComponent = ({
 }) => {
   if (data.length === 0)
     return (
-      <div className=" h-40 flex flex-col justify-center items-center">
-        <p className=" text-sm ">No pending Assignments</p>
+      <div className="  flex flex-col justify-center items-center">
+        <p className=" text-sm ">Nothing to show here</p>
       </div>
     );
   return (
     <div>
       <Table>
-        <TableCaption>A list of your recent sssignments.</TableCaption>
+        <TableCaption>A list of your recent assignments.</TableCaption>
         <TableHeader>
           <TableRow>
             {head.map((x, index) => (
